@@ -12,9 +12,13 @@ services:
     tty: true
     env_file:
       - .env
-    #environment:
-      # SERVICE_NAME: laravel
-      # SERVICE_TAGS: dev
+    environment:
+      - DB_CONNECTION=mysql
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=laravel_test
+      - DB_USERNAME=root1
+      - DB_PASSWORD=root1
     working_dir: /var/www/html/
     volumes:
       - ./:/var/www/html/
