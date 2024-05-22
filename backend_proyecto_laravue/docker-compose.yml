@@ -10,8 +10,8 @@ services:
     container_name: laravel
     restart: unless-stopped
     tty: true
-    env_file:
-      - .env
+    # env_file:
+    #  - .env
     environment:
       - DB_CONNECTION=mysql
       - DB_HOST=db
