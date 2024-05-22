@@ -60,14 +60,14 @@ services:
   
   #Mysql DB
   mysql:
-    image: mysql:8.0
+    image: mysql:8.1
     container_name: db
     restart: unless-stopped
     tty: true
     ports:
-        - "33061:3306"
+        - "3306:3306"
     environment:
-        MYSQL_ROOT_PASSWORD: secret
+        MYSQL_ROOT_PASSWORD: root
         MYSQL_DATABASE: laravel
         MYSQL_USER: root1
         MYSQL_PASSWORD: root1
