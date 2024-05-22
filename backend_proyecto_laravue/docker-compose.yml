@@ -12,7 +12,7 @@ services:
     tty: true
     env_file:
       - .env
-    environment:
+    #environment:
       # SERVICE_NAME: laravel
       # SERVICE_TAGS: dev
     working_dir: /var/www/html/
