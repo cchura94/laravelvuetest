@@ -14,4 +14,4 @@ docker-compose exec -T laravel composer install
 docker-compose exec -T laravel php artisan optimize
 docker-compose exec -T laravel php artisan migrate:fresh
 docker-compose exec -T laravel php artisan db:seed
-echo ${C}  "La aplicación está lista en localhost:8080." ${N}
+echo ${C}  "La aplicación está lista en IP:80 y IP:80/api." ${N}
