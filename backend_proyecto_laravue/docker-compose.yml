@@ -65,7 +65,7 @@ services:
       - app-network
   
   #Mysql DB
-  mysql:
+  db:
     image: mysql:8.1
     container_name: db
     restart: unless-stopped
