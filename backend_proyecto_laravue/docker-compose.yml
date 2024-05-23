@@ -87,6 +87,6 @@ services:
 #   app-network:
 #     driver: bridge
 
-volumes:
-  mysql:
-    driver: local
+#volumes:
+#  mysql:
+#    driver: local
