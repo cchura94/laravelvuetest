@@ -78,7 +78,10 @@ services:
       MYSQL_USER: root1
       MYSQL_PASSWORD: root1
     volumes:
-      - ../mysql:/mysql
+      - .docker/db/data/:/var/lib/mysql
+      - .docker/logs:/var/log/mysql
+    # volumes:
+    #   - ../mysql:/mysql
     # networks:
     #   - app-network
 
