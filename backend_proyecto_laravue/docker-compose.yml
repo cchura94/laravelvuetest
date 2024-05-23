@@ -61,8 +61,8 @@ services:
     tty: true
     ports:
       - "80:80"
-    networks:
-      - app-network
+    # networks:
+    #   - app-network
   
   #Mysql DB
   db:
@@ -79,13 +79,13 @@ services:
       MYSQL_PASSWORD: root1
     volumes:
       - ../mysql:/mysql
-    networks:
-      - app-network
+    # networks:
+    #   - app-network
 
 #Docker Networks
-networks:
-  app-network:
-    driver: bridge
+# networks:
+#   app-network:
+#     driver: bridge
 
 volumes:
   mysql:
